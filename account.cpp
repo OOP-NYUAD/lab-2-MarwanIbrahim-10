@@ -18,7 +18,7 @@
 class Account {
 private:
     // Private member variable to store the balance.
-
+    Account::balance;
 public:
     // Default constructor.
     // Initialize 'balance' to 0.
