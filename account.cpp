@@ -18,7 +18,7 @@
 class Account {
 private:
     // Private member variable to store the balance.
-    Account::double balance;
+    double Account:: balance;
 public:
     // Default constructor.
     // Initialize 'balance' to 0.
@@ -36,14 +36,14 @@ public:
     }
     // Getter function to return the current balance.
     // TODO: Implement the 'getBalance' function.
-    Account:: double getBalance()
+    double Account:: getBalance()
     {
         cout << "Current Balance: "<< balance << endl;
     }
 
     // Setter function to set the balance to a new value.
     // TODO: Implement the 'setBalance' function.
-    Account::void setBalance(double newBalance)
+    void Account::setBalance(double newBalance)
     {
         balance = newBalance;
         cout << "Balance Updated Successfully \n";
@@ -51,7 +51,7 @@ public:
 
     // Function to deposit an amount into the account.
     // TODO: Implement the 'deposit' function.
-    Account::void deposit(double amount)
+    void Account::deposit(double amount)
     {
         cout << "Type the amount you wish to deposit \n";
         cin >> amount;
@@ -61,7 +61,7 @@ public:
 
     // Function to withdraw an amount from the account.
     // TODO: Implement the 'withdraw' function.
-    Account::void withdraw(double amount)
+    void Account::withdraw(double amount)
     {
         cout << "Type the amount you wish to withdraw \n";
         cin >> amount;
