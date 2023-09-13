@@ -15,49 +15,57 @@
 
 #include <iostream>
 using namespace std;
+
 class Account {
 private:
     // Private member variable to store the balance.
     double balance;
 
 public:
-   Account::Account() { balance = 0; }
+   Account()
+    { 
+      balance = 0; 
+    }
 // Parameterized constructor.
 // Initialize 'balance' with the provided 'initialBalance'.
 // TODO: Implement the parameterized constructor.
-Account::Account(double initialBalance) { balance = initialBalance; }
+Account(double initialBalance) 
+{ 
+  balance = initialBalance; 
+}
 // Getter function to return the current balance.
 // TODO: Implement the 'getBalance' function.
-double Account::getBalance() { cout << "Current Balance: " << balance << endl; }
+double getBalance() 
+  {
+   return balance; 
+   }
 
 // Setter function to set the balance to a new value.
 // TODO: Implement the 'setBalance' function.
-void Account::setBalance(double newBalance) {
+void setBalance(double newBalance) {
   balance = newBalance;
   cout << "Balance Updated Successfully \n";
 }
 
 // Function to deposit an amount into the account.
 // TODO: Implement the 'deposit' function.
-void Account::deposit(double amount) {
+void deposit(double amount) {
   cout << "Type the amount you wish to deposit \n";
   cin >> amount;
   balance += amount;
-  getBalance();
 }
 
 // Function to withdraw an amount from the account.
 // TODO: Implement the 'withdraw' function.
-void Account::withdraw(double amount) {
+void withdraw(double amount) {
   cout << "Type the amount you wish to withdraw \n";
   cin >> amount;
   balance -= amount;
-  getBalance();
 }
 
 // Destructor.
 // Display a message indicating the account is being destroyed.
 // TODO: Implement the destructor.
-Account::~Account() { cout << "Account successfully destroyed \n"; }
+~Account() { cout << "Account successfully destroyed \n"; }
 };
 
