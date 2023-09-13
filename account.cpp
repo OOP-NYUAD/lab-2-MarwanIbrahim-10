@@ -44,7 +44,6 @@ double getBalance()
 // TODO: Implement the 'setBalance' function.
 void setBalance(double newBalance) {
   balance = newBalance;
-  cout << "Balance Updated Successfully \n";
 }
 
 // Function to deposit an amount into the account.
